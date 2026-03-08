@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/bootfi-team/nexus-downloads/main/icon.png" alt="DevOps Nexus Logo" width="120" />
+  <img src="icon.png" alt="DevOps Nexus Logo" width="120" />
 
   <h1>DevOps Nexus CLI</h1>
   <p><b>The Official Internal Developer Portal (IDP) for Bootfi Team</b></p>
