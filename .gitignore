@@ -1,0 +1,8 @@
+# Ignore the actual compiled binaries
+setup-nexus-mac
+setup-nexus-ubuntu
+setup-nexus-intel
+
+# Ignore system junk
+.DS_Store
+Thumbs.db
