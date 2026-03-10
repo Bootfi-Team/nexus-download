@@ -1,11 +1,11 @@
 <div align="center">
   <img src="icon.png" alt="DevOps Nexus Logo" width="120" />
 
-  <h1>DevOps Nexus CLI</h1>
-  <p><b>The Official Internal Developer Portal (IDP) for Bootfi Team</b></p>
+  <h1>DevOps Nexus</h1>
+  <p><b>The Ultimate Developer Workstation & Deployment Hub for Bootfi Team</b></p>
 
   <a href="https://github.com/bootfi-team/nexus-downloads/releases">
-    <img src="https://img.shields.io/badge/Version-1.2.0-00FFFF?style=for-the-badge&logo=semver&logoColor=black" alt="Version">
+    <img src="https://img.shields.io/badge/Version-1.5.1-00FFFF?style=for-the-badge&logo=semver&logoColor=black" alt="Version">
   </a>
   <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Ubuntu-282C34?style=for-the-badge&logo=apple&logoColor=white" alt="Platform">
   <img src="https://img.shields.io/badge/Access-Bootfi_Team_Only-FF0000?style=for-the-badge&logo=github&logoColor=white" alt="Access">
@@ -16,82 +16,85 @@
 
 ## 🌌 Introduction
 
-**DevOps Nexus** is the centralized command-line interface and orchestrator for the Bootfi Team pipeline. It completely eliminates manual server configuration, standardizes local development environments, and provides a zero-touch interface for triggering complex GitHub Action deployments directly from your local terminal.
+**DevOps Nexus** is your all-in-one environment manager and deployment orchestrator. It is designed to get you coding in minutes and deploying in seconds. 
 
-Built with performance and security in mind, the Nexus engine compiles down to native machine code, ensuring absolute protection of proprietary deployment logic.
-
----
-
-## ✨ Core Features
-
-- **🔒 Strict Zero-Trust Security:** Hardcoded execution gates verify real-time GitHub Organization membership (`bootfi-team`) before allowing pipeline access.
-- **⚡ Automated Environment Resolution:** Instantly detects missing dependencies (PHP 8.4, Composer, GitHub CLI) and silently installs them via official sources.
-- **🚀 Zero-Touch Provisioning:** Trigger first-time deployments, toggle debug modes, and update Mail/Firebase credentials via an interactive terminal UI.
-- **🔄 Auto-Updating Engine:** Injects a global shell wrapper that silently checks for new pipeline versions before every execution.
-- **🗂️ Drag-and-Drop Credentials:** Seamlessly parses local Firebase `.json` files dragged directly from your Mac Finder into the terminal.
+For developers, Nexus removes the friction of server management. You don't need to touch cPanel, SSH into servers, or configure DNS records. Whether you are setting up a brand new machine or pushing a critical hotfix to production, Nexus handles the heavy lifting securely and directly from your local terminal.
 
 ---
 
-## 📸 Screenshots
+## ✨ Core Features: What You Gain
+
+Nexus is built to protect your time and your code. Here is what you can do without ever leaving your terminal:
+
+- **🚀 Instant Workstation Setup:** Run the Nexus installer on a fresh Mac or Ubuntu machine, and it automatically installs Homebrew, Git, PHP, Node, Docker, and all your essential desktop apps (Discord, Slack, Warp, etc.). It even configures your ZSH terminal with our signature `antigravity` theme.
+- **⚡ Zero-Touch Provisioning:** Need a new testing environment? Nexus provisions the server, creates the databases, configures the `.env` files, and deploys your code automatically. 
+- **🛟 Fail-Safe Code Rollbacks:** Broke staging? Don't panic. The `Emergency Rollback` command lets you instantly jump back to the previous stable release with zero downtime.
+- **🗄️ Secure Database Backups:** Need a snapshot before running a risky migration? Trigger a secure database dump that automatically zips and sends the file directly to the master Discord channel—keeping sensitive data off your local machine.
+- **☁️ One-Click Cloudflare DNS:** Instantly bind your custom domains and activate Cloudflare's proxy (Orange Cloud) to secure your endpoints and enable AutoSSL.
+- **📢 Custom Project Alerts:** Easily route deployment success/failure notifications to your project's specific Slack or Discord channels.
+
+---
+
+## 📸 Interface
 
 <div align="center">
   <table>
     <tr>
-      <td align="center"><b>Interactive Provisioning</b></td>
+      <td align="center"><b>Interactive Terminal UI</b></td>
       <td align="center"><b>Live Pipeline Execution</b></td>
     </tr>
     <tr>
-      <td><img src="https://placehold.co/400x250/1A1A1A/00FFFF?text=Upload+CLI+Screenshot+1" alt="Interactive Menu"></td>
-      <td><img src="https://placehold.co/400x250/1A1A1A/00FFFF?text=Upload+CLI+Screenshot+2" alt="Live Execution"></td>
+      <td><img src="https://raw.githubusercontent.com/bootfi-team/nexus-downloads/main/assets/menu-screenshot.png" alt="Interactive Menu" width="400"></td>
+      <td><img src="https://raw.githubusercontent.com/bootfi-team/nexus-downloads/main/assets/pipeline-screenshot.png" alt="Live Execution" width="400"></td>
     </tr>
   </table>
+  <p><i>The intuitive Laravel Prompts interface. No complex flags to memorize.</i></p>
 </div>
 
 ---
 
 ## 🚀 Installation Guide
 
-Choose the installation method that best fits your workflow. Both methods provide the exact same functionality and auto-updating features.
+Getting started takes less than two minutes. The installer automatically detects your OS (macOS or Ubuntu) and configures the environment accordingly.
 
-### Option A: The "One-Liner" Terminal Install (Recommended)
-*Best for DevOps engineers and Ubuntu users.*
-
-Open your terminal and paste the following command. The script will automatically detect your OS (macOS or Linux), download the correct native binary, and configure your environment.
-
-```bash
-curl -fsSL [https://raw.githubusercontent.com/bootfi-team/nexus-downloads/main/install.sh](https://raw.githubusercontent.com/bootfi-team/nexus-downloads/main/install.sh) | bash
-```
-
-### Option B: The macOS App Bundle (GUI Install)
-*Best for macOS users who prefer a native application experience.*
+### The Native Installer App
 
 1. Navigate to the [Releases Tab](../../releases/latest) in this repository.
-2. Download the `DevOps-Nexus-Installer.zip` file.
-3. Extract the `.zip` to reveal the **DevOps Nexus** app (featuring the green Nexus logo).
-4. Double-click the App. It will automatically launch a secure terminal session and initialize your system.
-
-> **Note:** Once installed via either method, simply type `nexus` in your terminal to launch the IDP from any project directory.
+2. Download the `developer-nexus` binary for your specific system (Mac Universal, Ubuntu AMD64, or Ubuntu ARM64 VM).
+3. Open your terminal, grant execution permissions, and run it:
+   ```bash
+   chmod +x developer-nexus
+   ./developer-nexus
+   ```
+4. Sit back and watch the animated progress bars as Nexus configures your entire workstation. 
+5. Once complete, restart your terminal, navigate to your Git repository, and type `php bin/nexus` to launch the deployment hub!
 
 ---
 
 ## 📋 Changelog
 
+### `v1.5.1` - The Workstation & Security Release
+* **feat:** Built a Golang native workstation installer with custom animated progress bars for macOS and Ubuntu.
+* **feat:** Added `Secure Database Backup` functionality, routing dumps directly to a master Discord webhook for maximum security.
+* **feat:** Integrated complete `Cloudflare DNS` API automation, including cPanel AutoSSL triggers.
+* **feat:** Expanded `Secrets Manager` to support both Slack and Discord project-specific webhooks.
+* **security:** Introduced a `Global Guard` to block execution if a repository is not properly initialized with Nexus workflows.
+* **fix:** Removed all hardcoded SSH ports, forcing the engine to utilize the organization's secure `SERVER_PORT` secret.
+
 ### `v1.2.0` - The Interactive Release
 * **feat:** Completely rebuilt the CLI using Laravel Prompts for a rich, interactive UI.
-* **feat:** Implemented Golang-based native installers for Mac (M-Series/Intel) and Ubuntu.
 * **feat:** Added Drag-and-Drop functionality for Firebase JSON provisioning.
 * **security:** Introduced strict GitHub Organization (`bootfi-team`) membership verification.
-* **automation:** Added silent background installation for PHP 8.4 and Composer via Laravel's official Mac installer.
 * **fix:** Resolved workflow targeting issues by prompting for explicit branch selection (`testing` vs `main`).
 
 ---
 
 ## 👾 Support & Troubleshooting
 
-If the installer halts with an **Access Denied** error:
+If the installer halts or deployment workflows fail:
 1. Ensure your GitHub CLI is authenticated by running: `gh auth login`
-2. Ensure you have accepted the invitation to the **Bootfi Team** GitHub Organization.
-3. If issues persist, contact **Turkibad** on Discord.
+2. Verify you have explicitly initialized the repo by running the `Initialize Nexus pipelines` option first.
+3. If issues persist, message **@Turkibad** on the Bootfi Discord.
 
 ---
 
