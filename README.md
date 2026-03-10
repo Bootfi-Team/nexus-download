@@ -40,12 +40,16 @@ Nexus is built to protect your time and your code. Here is what you can do witho
 <div align="center">
   <table>
     <tr>
-      <td align="center"><b>Interactive Terminal UI</b></td>
+      <td colspan="2" align="center"><b>Main Orchestrator Menu</b><br>
+      <img src="https://raw.githubusercontent.com/Bootfi-Team/nexus-download/main/provision.png" width="600"></td>
+    </tr>
+    <tr>
+      <td align="center"><b>Interactive Provisioning</b></td>
       <td align="center"><b>Live Pipeline Execution</b></td>
     </tr>
     <tr>
-      <td><img src="https://raw.githubusercontent.com/Bootfi-Team/nexus-download/main/menu.png" alt="Interactive Menu" width="400"></td>
-      <td><img src="https://raw.githubusercontent.com/Bootfi-Team/nexus-download/main/install_nexus.png" alt="Live Execution" width="400"></td>
+      <td><img src="https://raw.githubusercontent.com/Bootfi-Team/nexus-download/main/menu.png" width="400"></td>
+      <td><img src="https://raw.githubusercontent.com/Bootfi-Team/nexus-download/main/install_nexus.png" width="400"></td>
     </tr>
   </table>
   <p><i>The intuitive Laravel Prompts interface. No complex flags to memorize.</i></p>
