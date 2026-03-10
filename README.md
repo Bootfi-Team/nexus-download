@@ -2,7 +2,7 @@
   <img src="icon.png" alt="DevOps Nexus Logo" width="120" />
 
   <h1>DevOps Nexus</h1>
-  <p><b>The Ultimate Developer Workstation & Deployment Hub for Bootfi Team</b></p>
+  <p><b>The Ultimate Developer Workstation & Deployment Hub</b></p>
 
   <a href="https://github.com/bootfi-team/nexus-downloads/releases">
     <img src="https://img.shields.io/badge/Version-1.5.1-00FFFF?style=for-the-badge&logo=semver&logoColor=black" alt="Version">
